@@ -6,6 +6,17 @@
 	background-color: #F2F2F2;
 }
 
+.menu
+{
+	display: flex;
+	text-align: right;
+
+}
+
+.Filtre
+{
+	display: flex;
+}
 .Hebergement
 {
 	display: flex;
