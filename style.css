@@ -1,0 +1,27 @@
+#Tendance
+{
+	display:flex ;
+	max-width: 150px;
+	max-height: 150px;
+	background-color: #F2F2F2;
+}
+
+.Hebergement
+{
+	display: flex;
+	flex-wrap:wrap ;	
+	background-color: #F2F2F2;
+}
+
+.Les_plus_populaire
+{
+	display: flex;
+	flex-direction: column;
+	background-color: #F2F2F2;
+}
+body
+
+{
+	margin: 0; 
+	
+}
