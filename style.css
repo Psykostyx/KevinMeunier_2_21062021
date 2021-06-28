@@ -30,6 +30,23 @@
 	flex-direction: column;
 	background-color: #F2F2F2;
 }
+
+.Activité_à_Marseille
+{
+
+	max-width: 150px;
+	max-height: 150px;
+	display: flex;
+
+}
+footer
+{
+	
+	background-color: #F2F2F2;
+	text-align: center;
+	display: flex;
+}
+
 body
 
 {
