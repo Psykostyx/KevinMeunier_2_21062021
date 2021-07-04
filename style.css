@@ -1,20 +1,43 @@
+
 body
 {
+font-family:'Open Sans', sans-serif;
 margin: 0;
+
 }
+
 
 header
 {
 text-align: left;
 display: flex;
 }
-.en_tête
+#en_tête img
 {
+	height: 10%;
+	width: 20%;
+	margin-top: 40px;
 	
 }
 .menu
 {
 display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+text-align: right;
+position: absolute;right: 60px;top: 30px;
+
+}
+
+.menu a
+{
+	margin-right: 50px;
+}
+
+.menu #ins
+{
+	color: #0065FC;
+	font-weight: bold;
 }
 
 .search
@@ -53,34 +76,77 @@ flex-direction: row;
 
 }
 
-.Tendance
+#Tendance
 {
-	
+	display: flex;
+	width: 100%;
+	height: 30%;
+}
+#Tendances img
+{
+    max-height: 150px;
+    width: 100%;
+    height: 100%;
 }
 
 .Hébergement
 {
+	display: flex;
+	width: 70%;
+	height: 30%;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	text-align: center;
+}
+
+.image img
+{
+	max-width: 200px;
+	max-height: 150px;
 	
 }
 
-.up
+.litle
+ {
+	 width: 100%;
+ }
+.image
 {
-
+	width: 15%;
+	height: 5%;
 }
 
-.down
+.Up
 {
 
+	
+}
+
+.Down
+{
+	
 }
 
 .one
 {
-
+	
+	
 }
 
-.Les_plus_populaires
+.Les_plus_populaires 
 {
-	
+	text-align: center;
+	flex-direction: column;
+	width: 30%;
+	height: 70%;
+	position: absolute;right: 60px;
+}
+.Les_plus_populaires img
+{
+	max-width: 200px;
+	max-height: 150px;
+	width: 100%;
+	height: 100%;
 }
 
 .two

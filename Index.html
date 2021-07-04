@@ -8,6 +8,13 @@
 		<meta name="description" content="Réservia Site de réservation">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     	<link rel="stylesheet"  href="style.css">
+		<link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+		<link href="fontawesome/css/brands.css" rel="stylesheet">
+		<link href="fontawesome/css/solid.css" rel="stylesheet">
+		<link href="fontawesome/css/all.css" rel="stylesheet">
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+		</style>
 		
     </head>
 
@@ -15,21 +22,24 @@
 
 		<header>
 			<article id="en_tête">
-				<img src="images/logo/Reservia@3x.png" />
 				<div class="menu">
+					
 					<a href="#héb">Hébergements</a>
 					<a href="#act">Activité</a>
-					<p>S'inscrire</p>
+					<a id="ins" href="#inscrire">S'inscrire</a>
 
 				</div>
+				<img src="images/logo/Reservia@3x.png" />
 
-				<div class="">
+				<div class="intro">
 					<h4>Trouver votre hébergement pour des Vacances de rêve</h4>
 					<p>En plein centre ville ou en pleine nature</p>
 				</div>
 
 				<div class="search">
+					<i class="fas fa-map-marker-alt"></i> 
 					<input type="search" />
+					<input type="submit" name="rechercher" id="rechercher" />
 				</div>
 
 				
@@ -68,68 +78,68 @@
 				<h3 id="héb"> Hébergement à Marseille </h3>
 
 				<div class="Up">
-					<div class="one">
-							<img src="images/hebergements/5_xsmall/ALC.jpg" /> <br/>
+					<div class="image">
+							<img src="images/hebergements/4_small/ALC.jpg" /> <br/>
 							<p>Auberge la cannebière</p> 
 							<p>Nuit à partir de 25€</p>
 					</div>
 
-					<div class="one">
-							<img src="images/hebergements/5_xsmall/HDP.jpg" /> <br/>
+						<div class="image">
+							<img src="images/hebergements/4_small/HDP.jpg" /> <br/>
 							<p>Hôtel du port</p> 
 							<p>Nuit à partir de 52€</p>
-					</div>
+						</div>
 
-					<div class="one">
-							<img src="images/hebergements/5_xsmall/HLM.jpg" /> <br/>
+						<div class="image">
+							<img src="images/hebergements/4_small/HLM.jpg" /> <br/>
 							<p>Hôtel les mouettes</p> 
 							<p>Nuit à partir de 76€</p>
 						</div>
 				</div>
 			
 				<div class="Down">	
-					<div class="one">
-							<img src="images/hebergements/5_xsmall/HDLM.jpg" /> <br/>
+					<div class="image">
+							<img class="litle"src="images/hebergements/4_small/HDLM.jpg" /> <br/>
 							<p>Hôtel de la mer</p> 
 							<p>Nuit à partir de 46€</p>
 					</div>
 			
 
-					<div class="one">
-							<img src="images/hebergements/5_xsmall/ALP.jpg" /> <br/>
+					<div class="image">
+							<img src="images/hebergements/4_small/ALP.jpg" /> <br/>
 							<p>Auberge Le Panier</p>
 							<p>Nuit à partir de 23€</p>
 					</div>
 
 
-					<div class="one">
-							<img src="images/hebergements/5_xsmall/HCA.jpg" /> <br/>
+					<div class="image">
+							<img class="litle" src="images/hebergements/4_small/HCA.jpg" /> <br/>
 							<p>Hôtel Chez Amine</p> 
 							<p>Nuit à partir de 96€</p>
 					</div>
 				</div>
-
+				<p>afficher plus</p>
 			</section>
 
-			<section class="Les_plus_populaire"> 
+			<section class="Les_plus_populaires"> 
 		
 				<h3>Les plus populaires</h3>
 
-				<div class="two">
-					<img src="images/hebergements/5_xsmall/HLSDM.jpg" /> <br/>
+				<div class="HLSDM">
+					<img src="images/hebergements/4_small/HLSDM.jpg" /> <br/>
 					<p>Hôtel Le Soleil du matin</p> 
 					<p>Nuit à partir de 128€</p>
 				</div>
 
 
-				<div class="two" >
-					<img src="images/hebergements/5_xsmall/ACDL.jpg" /> <br/>
+				<div class="ACOL">
+					<img src="images/hebergements/4_small/ACDL.jpg" /> <br/>
 					<p>Au coeur de l'eau<br/> Chambre d'hôtes</p> 
 					<p>Nuit à partir de 71€</p>
 				</div>
 
-				<div class="two">
-					<img src="images/hebergements/5_xsmall/HTBEB.jpg" /> <br/>
+				<div class="HTBEB">
+					<img src="images/hebergements/4_small/HTBEB.jpg" /> <br/>
 					<p>Hôtel Tout bleu et Blanc</p> 
 					<p>Nuit à partir de 68€</p>
 				</div>
@@ -140,37 +150,37 @@
 		
 		<article id="Activité_à_Marseille">
 			<section id="Activité">
-				<h3 a id="act">Activité_à_Marseille</h3>
+				<h3 a id="act">Activité à Marseille</h3>
 
-				<div class="AM">
+				<div class="bpics">
 					<img src="images/activites/3_medium/VP.jpg" /> <br/>
 					<p>Vieux Port</p> 
 				</div>
 
-					<div class="three">
-						<div class="AM">
+					<div class="duo">
+						<div id="FDP">
 							<img src="images/activites/3_medium/FDP.jpg" /> <br/>				
 							<p>Fort de Pomègues</p> 
 						</div>
 
-						<div class="AM">
+						<div id="IDF">
 							<img src="images/activites/3_medium/IDF.jpg" /> <br/>
 							<p>Îles du Frioul</p> 
 						</div> 
 					</div>
 
-						<div class="AM">
+						<div class="bpics">
 							<img src="images/activites/3_medium/PNDC.jpg" /> <br/>
 							<p>Parc National des calanques</p> 
 						</div>
 
-					<div class="three">
-						<div class="AM">
+					<div class="duo"> 
+						<div id="NDDLG">
 							<img src="images/activites/3_medium/NDDLG.jpg" /> <br/>
 							<p>Notre-Dame-de-la-Garde</p> 
 						</div>
 
-						<div class="AM">
+						<div id="PL">
 							<img src="images/activites/3_medium/PL.jpg" /> <br/>
 							<p>Parc Longchamp</p> 
 						</div>
