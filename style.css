@@ -1,132 +1,208 @@
+/*Header*/
+header
+{
+	display: flex;
+}
 
 body
 {
-font-family:'Open Sans', sans-serif;
-margin: 0;
-
+	font-family:'Open Sans', sans-serif;
+	margin: 10px;
 }
 
-
-header
+.FlexAround
 {
-text-align: left;
-display: flex;
+	display: flex;
+	justify-content: space-around;
+	align-items:center;
 }
-#en_tête img
+.FlexCenter
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.FlexBetween
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.Décorationnone
+{
+	text-decoration: none;
+}
+
+/*Lien de Navigation*/ 
+
+#Navigation img
 {
 	height: 10%;
 	width: 15%;
 	margin-top: 40px;
 	
+	
 }
-.menu
+
+.Link a
+{
+	margin-right: 50px;
+	text-decoration: none;
+	color: #0065FC;
+}
+
+.Link a :visited 
+{
+    color: #0065FC;
+    text-decoration: none;
+}
+
+
+#Activités
+{
+	color: black;
+	border: none;
+	
+}
+.Signin
+{
+font-weight: bold;
+
+}
+.Link
 {
 display: flex;
 flex-direction: row;
 flex-wrap: nowrap;
-text-align: right;
-position: absolute;right: 60px;top: 30px;
+position: absolute;right: 60px;top: 6px;
 
+line-height: 100px;
+}
+.Link1 /*Link1 car seul un lien est concerné par la bordure*/
+{
+	border-top: 1px solid blue;
 }
 
- .intro
- {
-	 margin-left: 15px;
- } 
 
-.menu a
-{
-	margin-right: 50px;
-}
+/*Barre de recherche*/
 
-.menu #ins
+.Bordersearch
 {
-	color: #0065FC;
-	font-weight: bold;
+	width: 400px;
+	border-radius: 10px;
+	border: 0.5px #f2f2f2 solid;
 }
-
-.search
+.paddingSearch
 {
-	border: 3px white solid;
-	border-radius: 5px;
-	border: none;
-	color: white;
-	padding: 15px 30px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 15px;
+	padding-left: 1px;
 }
-input
+.Search
 {
-	
-	border: 2px #F2F2F2 solid;
-	padding: 15px 30px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 15px;
 	height: 50px;
-	margin-left: 40px ;
+	width: 230px;
+	font-size: 18px;
+	color: black;
+	font-weight: bold;
+	margin-left: 10px;
 }
-button 
+.BoutonSearch
 {
-	background-color: #0065FC;
-	border: none;
+	width: 120px;
+	height: 50px;
 	color: white;
-	padding: 15px 30px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 15px;
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	
+	cursor: pointer;
+	border-radius: 0px 10px 10px 0px;
 }
-.Ville 
+.BorderNone
 {
-	color:black
+	border: none;
 }
-#Filtre 
+.IconSize
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 10px 0px 0px 10px;
+}
+.BackGrey
+{
+	background-color: #F2F2F2;
+}
+.BackBlue
+{
+	background-color: blue;
+}
+/*Filtre*/
+.MargFiltre
+{
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+.MargFiltreTitre
+{
+	margin-right: 20px;
+}
+.FiltreTextIcon
+{
+	border: 2px solid #f2f2f2;
+	height: 50px;
+	border-radius: 30px;
+	margin-right: 20px;
+}
+.FiltreTextIcon:hover > .FiltreText
+{
+color:#0065FC
+}
+.FiltreTextIcon:hover > .FiltreIcon
+{
+color: white;
+background-color: #0065FC;
+}
+.FiltreText
+{
+	height: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 0 25px 25px 0;
+}
+.FiltreIcon
+{
+	margin-left: -2px;
+	border-radius: 25px;
+	height: 52px;
+	width: 52px;
+	color: #0065FC;
+	background-color: #deebff;
+}
+.Filtre
 {
 	display: flex;
-	padding-left: 15px;
+	align-items: center;
+	align-content: center;
 	
-	
-
 }
-#Filtre h2
-{
-	font-size: 20px;
-	margin-top: 8px;
-}
-.Filtres
+/*Section Information*/
+.Info
 {
 	display: flex;
-	flex-wrap: nowrap;
-	margin-left: 30px;
-	border: 3px #F2F2F2 solid;
-	border-radius: 20px 20px;
-	height: 35px;
-	width: auto;
-	
-
-	
+	align-items: center;
+	padding-right: 0px;
 }
-
-
 .fa-info
 {
-	color: blue;
-	border:1px #f2f2f2 solid;
-	margin-left: 15px;
-    padding:12px;
-    border-radius: 50%;
-	font-size: 10px;
-	
-	
+	color: blue
+		
 }
-.Filtres i
+.ParentIcon
+{
+	width: 20px;
+	height: 20px;
+	border: 2px solid #f2f2f2;
+	border-radius: 25px;
+}
+/*Fin du Header*/
+
+./Filtres i
 {
 	margin-right: 30px;
 	max-height: 5px;
@@ -138,7 +214,7 @@ button
 	
 
 }
-.Filtres p
+./Filtres p
 {
 	display: inline-flex;
 	flex-wrap: nowrap;
@@ -148,7 +224,7 @@ button
 	font-size: 17px;
 	
 }
-.search i 
+.search/ i 
 {
 
 height: 4px;
@@ -175,7 +251,7 @@ display: inline-flex;
 
 #héb
 {
-	margin-left: 5px;
+	margin-left: 95px;
 }
 .Hebergement
 {
@@ -220,7 +296,7 @@ display: inline-flex;
     justify-content: space-evenly ;
     align-content: stretch;
     align-items: flex-start;
-	
+	line-height: 7px;
 }
 
 .Down
@@ -231,6 +307,7 @@ display: inline-flex;
 	justify-content: space-evenly;
 	align-content: stretch;
     align-items: flex-start;
+	line-height: 7px;
 }
 .Hebergement
 {
@@ -265,7 +342,7 @@ display: inline-flex;
 	flex-direction: column;
 	justify-content: space-around;
 	width: 30%;
-	height: 70%;
+	
 	border:  2px #F2F2F2;
 	background-color: #F2F2F2;
 	border-radius: 20px;
@@ -290,55 +367,85 @@ display: inline-flex;
 	width: 30%;
 	height: 70%;
 	font-size: 15px;
+	line-height: 10px;
 	
 	
 }
 .LPP
 {
 	display: flex;
-	flex-direction: row; column;
+	flex-direction: row;
 	
-	width: 92%;
+	width: 100%;
 	height: auto;
-	border: 1px white;
-	background-color: white;
+	border: none white;
+	
 	border-radius: 20px;
 	
 	
+	
+}
+
+.Star 
+{
+line-height: 10px;
+}
+
+.LPP p
+{
+	line-height: 15px;
+	margin-left: 10px;
+
 }
 .titre 
 {
 	margin-left: 5px;
 }
+#act
+{
+	margin-top: -50px;
+	margin-left: 20px;
+	display: inline-flex;
+}
+.Iact
+{
+	margin-left: 15px;
+	display: flex;
+    flex-direction: row;
+	flex-wrap: nowrap;
+    justify-content: space-evenly ;
+    align-content: stretch;
+    align-items: flex-start;
 
-.Activité_à_Marseille
+}
+
+#Activité_à_Marseille img
 {
 	
+    width: 80%;
+    height: 60%;
 }
 
-.Activité
+.bpics
 {
-
+	width: 50%;
+	height: 70%;
+	font-size: 15px;
 }
 
-.three
+.duo
 {
-
-}
-
-.AM 
-{
-
+	width: 30%;
+	height: 70%;
+	font-size: 15px;
 }
 
 footer
 
 {
-
-}
-
-.about
-
-{
-
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+margin-left: 15px;
+justify-content: space-around;
 }
