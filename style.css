@@ -28,9 +28,36 @@ body
 	justify-content: space-between;
 	align-items: center;
 }
+
+.FlexColumnAround
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.FlexColumnCenter
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.FlexColumnBetween
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+;
+}
+
+
 .Décorationnone
 {
 	text-decoration: none;
+}
+.TxtGras
+{
+	font-weight: bold;
 }
 
 /*Lien de Navigation*/ 
@@ -202,250 +229,293 @@ background-color: #0065FC;
 }
 /*Fin du Header*/
 
-./Filtres i
-{
-	margin-right: 30px;
-	max-height: 5px;
-	color: blue;
-	font-size: 22px;
-	display: inline-block;
- 	padding: 0.3em 0.2em;
-	border: 2px #F2F2F2;
-	
+/*Hébergement*/
 
-}
-./Filtres p
+.SizeHébergement
 {
-	display: inline-flex;
-	flex-wrap: nowrap;
-	margin-top: 1px;
-	margin-bottom: 1px;
-	margin-left: 0px;
-	font-size: 17px;
-	
-}
-.search/ i 
-{
-
-height: 4px;
-width:  4px;
-border: 3px #F2F2F2 solid;
-
-color: black;
-display: inline-flex;
+	flex: 2;
+	height: 650px;
+	margin-right: 20px;
+	border-radius: 10px;
 }
 
-#Tendance
+.SizePopulaire
 {
-	display: flex;
-	width: 120%;
-	height: 30%;
+	flex: 1;
+	height: 650px;
 	margin-left: 20px;
+	border-radius: 10px;
 }
-#Tendances img
+.BlocHebergment
 {
-    max-height: 150px;
-    width: 100%;
-    height: 100%;
-}
-
-#héb
-{
-	margin-left: 95px;
-}
-.Hebergement
-{
-	
-	width: 50%;
-	height: 30%;
-	
+	padding-left: 20px;
+	padding-right: 20px;
 	
 }
-
-.image img
+.Bloc1
 {
-	max-width: 270px;
-	max-height: 170px;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	
+	margin-bottom: 10px;
 }
-.image p
+.Bloc2
 {
-	margin-left: 10px;
+	margin-top: 10px;
 }
-
-.litle
- {
-	 
-	 width: 255px;
-	 height: 170px;
- }
-.image
+.CubeHebergement
 {
-	width: 15%;
-	height: 5%;
-}
-
-.Up
-{
-	
-	display: flex;
-    flex-direction: row;
-	flex-wrap: nowrap;
-    justify-content: space-evenly ;
-    align-content: stretch;
-    align-items: flex-start;
-	line-height: 7px;
-}
-
-.Down
-{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-evenly;
-	align-content: stretch;
-    align-items: flex-start;
-	line-height: 7px;
-}
-.Hebergement
-{
-	border:  2px #F2F2F2;
-	background-color: #F2F2F2;
-	border-radius: 20px;
-	
-}
-.image
-{
-	border: 1px white;
-	background-color: white;
-	border-radius: 20px;
-	width: auto;
+	width: 30%;
 	height: auto;
+	background-color: white;
+	padding: 1%;
+	border-radius: 20px;
 }
+.CubeDetailHebergement
+{
+	width: 90%;
+
+}
+.ImgHébergement1
+{
+	background-image: url("./images/hebergements/4_small/ALC.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px;
+	border-radius: 15px 15px 0px 0px;
+}
+.ImgHébergement2
+{
+	background-image: url("./images/hebergements/4_small/HDP.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px;
+	border-radius: 15px 15px 0px 0px;
+}
+.ImgHébergement3
+{
+	background-image: url("./images/hebergements/4_small/HLM.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px;
+	border-radius: 15px 15px 0px 0px;
+}
+.ImgHébergement4
+{
+	background-image: url("./images/hebergements/4_small/HDLM.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px;
+	border-radius: 15px 15px 0px 0px;
+}
+.ImgHébergement5
+{
+	background-image: url("./images/hebergements/4_small/ALP.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px;
+	border-radius: 15px 15px 0px 0px;
+}
+.ImgHébergement6
+{
+	background-image: url("./images/hebergements/4_small/HCA.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 120px;
+	border-radius: 15px 15px 0px 0px;
+}
+/*Populaire*/
+
+.BlocPopulaire
+{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.BlocPopulaire12
+{
+	margin-bottom: 22px;
+}
+.CubePopulaire
+{
+	background-color: white;
+	height: auto;
+	padding: 1% 0% 1% 1%;
+	border-radius: 20px;
+}
+.CubeDetailPopulaire
+{
+	width: 60%;
+	padding-left: 5%;
+}
+
+.ImgPopulaire1
+{
+	background-image: url("./images/hebergements/4_small/HLSDM.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 35%;
+	height: 160px;
+	border-radius: 15px 0px 0px 15px;
+}
+.ImgPopulaire2
+{
+	background-image: url("./images/hebergements/4_small/ACDL.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 35%;
+	height: 160px;
+	border-radius: 15px 0px 0px 15px;
+}
+.ImgPopulaire3
+{
+	background-image: url("./images/hebergements/4_small/HTBEB.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 35%;
+	height: 160px;
+	border-radius: 15px 0px 0px 15px;
+}
+
+/*Activité*/
+
+.Activités
+{
+margin-top: 50px;
+margin-bottom: 50px;
+}
+.BlocActivités
+{
+	width: 100%;
+	height: 600px;
+}
+.BlocActivités2356
+{
+	width: 23%;
+	height: 600px;
+}
+.CubeActivités
+{
+width: 23%;
+border-radius: 15px;
+box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+.CubeActivités2356
+{
+	width: 100%;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px 1px #f2f2f2;
+}
+.Heighttitle
+{
+	height: 70px;
+
+}
+.ActivitésTitre
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 5%;
+	width: 95%;
+
+}
+
+.ImgActivités1
+{
+	background-image: url("./images/activites/3_medium/VP.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 530px;
+	border-radius: 15px 15px 0px 0px;
+}
+.ImgActivités2
+{
+	background-image: url("./images/activites/3_medium/FDP.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 250px;
+	border-radius: 15px 15px 0px 0px;
+}
+.ImgActivités3
+{
+	background-image: url("./images/activites/3_medium/IDF.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 150px;
+	border-radius: 15px 15px 0px 0px;
+}
+.ImgActivités4
+{
+	background-image: url("./images/activites/3_medium/PNDC.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 530px;
+	border-radius: 15px 15px 0px 0px;
+}
+.ImgActivités5
+{
+	background-image: url("./images/activites/3_medium/NDDLG.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 200px;
+	border-radius: 15px 15px 0px 0px;
+}
+.ImgActivités6
+{
+	background-image: url("./images/activites/3_medium/PL.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 200px;
+	border-radius: 15px 15px 0px 0px;
+}
+
 .fa-star
 {
 	
 	
 	color: #F2F2F2;
 }
-
+/*Réglage et couleur des étoiles*/
 .BS
 {
 	color: blue;
 }
-.Les_plus_populaires 
-{
-	display: flex;
-	text-align: center;
-	flex-direction: column;
-	justify-content: space-around;
-	width: 30%;
-	
-	border:  2px #F2F2F2;
-	background-color: #F2F2F2;
-	border-radius: 20px;
-	
-}
-.Les_plus_populaires img
-{
-	max-width: 200px;
-	max-height: 150px;
-	width: 100%;
-	height: 100%;
-	display: inline-flex;
-	justify-content: space-evenly;
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
-}
-#prix
-{
-	display: inline-flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 30%;
-	height: 70%;
-	font-size: 15px;
-	line-height: 10px;
-	
-	
-}
-.LPP
-{
-	display: flex;
-	flex-direction: row;
-	
-	width: 100%;
-	height: auto;
-	border: none white;
-	
-	border-radius: 20px;
-	
-	
-	
-}
+
+
 
 .Star 
 {
 line-height: 10px;
 }
 
-.LPP p
-{
-	line-height: 15px;
-	margin-left: 10px;
+/*Fin du réglage*/
 
-}
-.titre 
-{
-	margin-left: 5px;
-}
-#act
-{
-	margin-top: -50px;
-	margin-left: 20px;
-	display: inline-flex;
-}
-.Iact
-{
-	margin-left: 15px;
-	display: flex;
-    flex-direction: row;
-	flex-wrap: nowrap;
-    justify-content: space-evenly ;
-    align-content: stretch;
-    align-items: flex-start;
 
-}
 
-#Activité_à_Marseille img
+
+.Footer
 {
-	
-    width: 80%;
-    height: 60%;
+height: 300px;
+margin-top: 100px;
 }
-
-.bpics
+.TailleBlocFooter
 {
-	width: 50%;
-	height: 70%;
-	font-size: 15px;
+	height: 150px;
 }
-
-.duo
+.MargeBlocFooter1
 {
-	width: 30%;
-	height: 70%;
-	font-size: 15px;
+	margin-left: 5%;
 }
-
-footer
-
+.MargeBlocFooter3
 {
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-margin-left: 15px;
-justify-content: space-around;
+	margin-right: 15%;
 }
