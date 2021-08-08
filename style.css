@@ -1,15 +1,4 @@
-/*Header*/
-header
-{
-	display: flex;
-}
-
-body
-{
-	font-family:'Open Sans', sans-serif;
-	margin: 10px;
-}
-
+/*Balise Général*/
 .FlexAround
 {
 	display: flex;
@@ -28,7 +17,6 @@ body
 	justify-content: space-between;
 	align-items: center;
 }
-
 .FlexColumnAround
 {
 	display: flex;
@@ -47,10 +35,8 @@ body
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-;
+
 }
-
-
 .Décorationnone
 {
 	text-decoration: none;
@@ -59,42 +45,58 @@ body
 {
 	font-weight: bold;
 }
+.BackGrey
+{
+	background-color: #F2F2F2;
+}
+.BackBlue
+{
+	background-color: blue;
+}
+/*Fin des balises général*/
+body
+{
+	font-family:'Open Sans', sans-serif;
+	margin: 10px;
+}
 
+/*Header*/
+header
+{
+	display: flex;
+}
 /*Lien de Navigation*/ 
-
 #Navigation img
 {
 	height: 10%;
 	width: 15%;
 	margin-top: 40px;
-	
-	
 }
-
 .Link a
 {
 	margin-right: 50px;
 	text-decoration: none;
 	color: #0065FC;
 }
-
 .Link a :visited 
 {
     color: #0065FC;
     text-decoration: none;
 }
-
-
-#Activités
+.Links:hover
+{
+	border-top: 1px solid blue;
+	cursor: pointer;
+}
+.Activité
 {
 	color: black;
-	border: none;
+	border: none;	
 	
 }
 .Signin
 {
 font-weight: bold;
-
 }
 .Link
 {
@@ -102,17 +104,15 @@ display: flex;
 flex-direction: row;
 flex-wrap: nowrap;
 position: absolute;right: 60px;top: 6px;
-
 line-height: 100px;
 }
 .Link1 /*Link1 car seul un lien est concerné par la bordure*/
 {
-	border-top: 1px solid blue;
+	border-top: 1px solid transparent;
 }
 
 
-/*Barre de recherche*/
-
+/*Section Barre de recherche*/
 .Bordersearch
 {
 	width: 400px;
@@ -140,6 +140,11 @@ line-height: 100px;
 	cursor: pointer;
 	border-radius: 0px 10px 10px 0px;
 }
+.BoutonSearch:hover
+{
+	color: #0065ff;
+	background-color: #F2F2F2;	
+}
 .BorderNone
 {
 	border: none;
@@ -150,14 +155,9 @@ line-height: 100px;
 	height: 50px;
 	border-radius: 10px 0px 0px 10px;
 }
-.BackGrey
-{
-	background-color: #F2F2F2;
-}
-.BackBlue
-{
-	background-color: blue;
-}
+
+/*Fin de la section barre de recherche*/
+
 /*Filtre*/
 .MargFiltre
 {
@@ -208,6 +208,8 @@ background-color: #0065FC;
 	align-content: center;
 	
 }
+/*Fin de la section Filtre*/
+
 /*Section Information*/
 .Info
 {
@@ -217,8 +219,7 @@ background-color: #0065FC;
 }
 .fa-info
 {
-	color: blue
-		
+	color: blue	
 }
 .ParentIcon
 {
@@ -229,21 +230,13 @@ background-color: #0065FC;
 }
 /*Fin du Header*/
 
-/*Hébergement*/
+/* Section Hébergement*/
 
 .SizeHébergement
 {
 	flex: 2;
 	height: 650px;
 	margin-right: 20px;
-	border-radius: 10px;
-}
-
-.SizePopulaire
-{
-	flex: 1;
-	height: 650px;
-	margin-left: 20px;
 	border-radius: 10px;
 }
 .BlocHebergment
@@ -268,10 +261,14 @@ background-color: #0065FC;
 	padding: 1%;
 	border-radius: 20px;
 }
+.CubeHebergement:hover
+{
+	cursor: pointer;
+	transform: scale(1.1);
+}
 .CubeDetailHebergement
 {
 	width: 90%;
-
 }
 .ImgHébergement1
 {
@@ -327,14 +324,21 @@ background-color: #0065FC;
 	height: 120px;
 	border-radius: 15px 15px 0px 0px;
 }
-/*Populaire*/
+/*Section Populaire*/
 
+.SizePopulaire
+{
+	flex: 1;
+	height: 650px;
+	margin-left: 20px;
+	border-radius: 10px;
+}
 .BlocPopulaire
 {
 	padding-left: 20px;
 	padding-right: 20px;
 }
-.BlocPopulaire12
+.BlocPopulaire12 /*12 parce que seul le Bloc 1 et 2 sont concerné*/
 {
 	margin-bottom: 22px;
 }
@@ -345,12 +349,16 @@ background-color: #0065FC;
 	padding: 1% 0% 1% 1%;
 	border-radius: 20px;
 }
+.CubePopulaire:hover
+{
+	cursor: pointer;
+	transform: scale(1.05);
+}
 .CubeDetailPopulaire
 {
 	width: 60%;
 	padding-left: 5%;
 }
-
 .ImgPopulaire1
 {
 	background-image: url("./images/hebergements/4_small/HLSDM.jpg");
@@ -378,8 +386,7 @@ background-color: #0065FC;
 	height: 160px;
 	border-radius: 15px 0px 0px 15px;
 }
-
-/*Activité*/
+/* Section Activité*/
 
 .Activités
 {
@@ -391,27 +398,36 @@ margin-bottom: 50px;
 	width: 100%;
 	height: 600px;
 }
-.BlocActivités2356
+.BlocActivités2356 /*2,3,5,6 parceque seule les images 2,3,5,6 sont concerné par cette régle*/
 {
 	width: 23%;
 	height: 600px;
 }
 .CubeActivités
 {
-width: 23%;
-border-radius: 15px;
-box-shadow: 5px 5px 5px 1px #f2f2f2;
+	width: 23%;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
-.CubeActivités2356
+.CubeActivités:hover
+{
+	cursor: pointer;
+	transform: scale(1.03);
+}
+.CubeActivités2356 /*2,3,5,6 parceque seule les images 2,3,5,6 sont concerné par cette régle*/ 
 {
 	width: 100%;
 	border-radius: 15px;
 	box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
+.CubeActivités2356:hover
+{
+	cursor: pointer;
+	transform: scale(1.03);
+}
 .Heighttitle
 {
 	height: 70px;
-
 }
 .ActivitésTitre
 {
@@ -420,9 +436,7 @@ box-shadow: 5px 5px 5px 1px #f2f2f2;
 	align-items: center;
 	padding-left: 5%;
 	width: 95%;
-
 }
-
 .ImgActivités1
 {
 	background-image: url("./images/activites/3_medium/VP.jpg");
@@ -477,30 +491,19 @@ box-shadow: 5px 5px 5px 1px #f2f2f2;
 	height: 200px;
 	border-radius: 15px 15px 0px 0px;
 }
+/*Réglage et couleur des étoiles*/
 
-.fa-star
+.fa-star /*Par défaut je veux que mes étoiles soit grise*/
 {
-	
-	
 	color: #F2F2F2;
 }
-/*Réglage et couleur des étoiles*/
 .BS
 {
 	color: blue;
 }
-
-
-
-.Star 
-{
-line-height: 10px;
-}
-
 /*Fin du réglage*/
 
-
-
+/*Section Footer*/
 
 .Footer
 {
@@ -518,4 +521,12 @@ margin-top: 100px;
 .MargeBlocFooter3
 {
 	margin-right: 15%;
+}
+.LinkFooter
+{
+	color: black;
+}
+.DivLinkFooter
+{
+	height: 30px;
 }
