@@ -66,39 +66,50 @@ header
 	display: flex;
 }
 /*Lien de Navigation*/ 
-#Navigation img
+#Navigation
 {
-	height: 10%;
-	width: 15%;
-	margin-top: 40px;
+	width: 100%;
 }
-.Link a
+
+.Sizelink
+{
+	width: 45%;
+}
+.Sizelinks
+{
+	width: 140px;
+	height: 99px;
+	
+}
+.Links13 
 {
 	margin-right: 50px;
 	text-decoration: none;
 	color: #0065FC;
 }
-.Link a :visited 
+.Links:visited 
 {
     color: #0065FC;
     text-decoration: none;
 }
 .Links:hover
 {
-	border-top: 1px solid blue;
+	border-top: 1px solid #0065FC;
 	cursor: pointer;
 }
 .Activité
 {
 	color: black;
-	border: none;	
+	margin-right: 50px;
+	text-decoration: none;
+		
 	
 }
 .Signin
 {
 font-weight: bold;
 }
-.Link
+./Link
 {
 display: flex;
 flex-direction: row;
@@ -106,7 +117,7 @@ flex-wrap: nowrap;
 position: absolute;right: 60px;top: 6px;
 line-height: 100px;
 }
-.Link1 /*Link1 car seul un lien est concerné par la bordure*/
+.Links 
 {
 	border-top: 1px solid transparent;
 }
@@ -398,7 +409,7 @@ margin-bottom: 50px;
 	width: 100%;
 	height: 600px;
 }
-.BlocActivités2356 /*2,3,5,6 parceque seule les images 2,3,5,6 sont concerné par cette régle*/
+.BlocActivités2356 /*2,3,5,6 parce que seule les images 2,3,5,6 sont concerné par cette régle*/
 {
 	width: 23%;
 	height: 600px;
@@ -530,3 +541,21 @@ margin-top: 100px;
 {
 	height: 30px;
 }
+
+
+/* Partie responsive Mobile*/
+
+@media all and (min-width: 320px) and (max-width: 600px) 
+{
+	#Navigation
+	{
+	
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		align-items: center;
+	}
+	
+}
+
