@@ -109,14 +109,14 @@ header
 {
 font-weight: bold;
 }
-./Link
+/* ./Link 
 {
 display: flex;
 flex-direction: row;
 flex-wrap: nowrap;
 position: absolute;right: 60px;top: 6px;
 line-height: 100px;
-}
+}*/
 .Links 
 {
 	border-top: 1px solid transparent;
@@ -215,6 +215,7 @@ background-color: #0065FC;
 .Filtre
 {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	align-content: center;
 	
@@ -243,6 +244,11 @@ background-color: #0065FC;
 
 /* Section Hébergement*/
 
+h2
+{
+	width: 100%;
+	margin: 20px 0 20px 10px;
+} 
 .SizeHébergement
 {
 	flex: 2;
@@ -543,19 +549,49 @@ margin-top: 100px;
 }
 
 
-/* Partie responsive Mobile*/
+/* Partie responsive Tablette*/
 
-@media all and (min-width: 320px) and (max-width: 600px) 
+@media (max-width: 768px) 
 {
-	#Navigation
+	body
+	 {
+		 width: 70%;
+	 }
+	#BlocHebergmentPopulaires 
 	{
-	
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		width: 100%;
-		align-items: center;
+		flex-direction: column;
+	}	
+	.BlocHebergment {
+		margin: 20px 0;
 	}
-	
+	#Navigations
+	{
+		flex-direction: row-reverse;
+		width: 30%;
+	}
+	.ImgHébergement1.ImgHébergement2.ImgHébergement3.ImgHébergement4.ImgHébergement5.ImgHébergement6
+	{
+		width: 140%;
+		height: 120%;
+		font-size: 40px;
+	}
+	.CubeHebergement
+	{
+	width: 100%;
+	padding: 1%;
+	border-radius: 20px;
+	}
+
+	#hébergement
+	{
+		width: 715px;
+		font-size: 13px;
+		margin: auto;
+	}
+
+
 }
 
+@media (max-width: 360px) {
+
+}
