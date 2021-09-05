@@ -12,22 +12,19 @@
 		<link href="fontawesome/css/brands.css" rel="stylesheet">
 		<link href="fontawesome/css/solid.css" rel="stylesheet">
 		<link href="fontawesome/css/all.css" rel="stylesheet">
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-		</style>
-		
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+
     </head>
 
- 	<body>
-
+	<body>
 		<header>
 			<article id="Navigation">
-				<div class="FlexBetween">
-					<div><img src="images/logo/Reservia@3x.png" alt="Logo Reservia" width="120px" height="50px"/></div>
-					<div class="SizeLink FlexAround">						
-						<div class="Sizelinks"><a class="Links13 Décorationnone" href="#hébergement">Hébergements</a></div>
-						<div class="Sizelinks"><a class="Activité Links Décorationnone" href="#activité">Activités</a></div>
-						<div class="Sizelinks "><a class="Signin Links13 Décorationnone" href="#inscrire">S'inscrire</a></div>
+				<div class="FlexBetween" id="headnav">
+					<div class="Logo"><img src="images/logo/Reservia@3x.png" alt="Logo Reservia" width="120px" height="50px"/></div>
+					<div class="SizeLink FlexAround "id="Navigations">						
+						<div class="Sizelinks Navlink" id="AncreHebergements"><a class="Links13 Décorationnone" href="#hébergement">Hébergements</a></div>
+						<div class="Sizelinks Navlink" id="AncreActivités"><a class="Activité Links Décorationnone" href="#activité">Activités</a></div>
+						<div class="Sizelinks" id="AncreInscription"><a class="Signin Links13 Décorationnone" href="#inscrire">S'inscrire</a></div>
 					</div>
 				</div>
 				
@@ -37,7 +34,7 @@
 					<p>En plein centre ville ou en pleine nature</p>
 				</div>
 
-				<div class="Bordersearch FlexCenter">
+				<div class="Bordersearch FlexCenter" id="Introduction">
 					<div class="IconSize FlexCenter BackGrey paddingSearch"><i class="fas fa-map-marker-alt"></i></div> 
 					<div class="Search"><input class="Search Flexcenter BorderNone" 
 						type="search" 
@@ -45,7 +42,7 @@
 					<div class="BackBlue FlexCenter BoutonSearch ">Rechercher</div>
 				</div>
 				
-				<div class="Filtre MargFiltre">
+				<div class="Filtre MargFiltre" id="Icon">
 					<div class="MargFiltreTitre">
 						<h3>Filtres</h3>
 					</div>
@@ -79,16 +76,16 @@
 			</article>
 		</header>
 	 		
-		<section class="FlexAround">
-			<div class="FlexColumnAround SizeHébergement BackGrey BlocHebergment">	
-				<div class="Bloc1 FlexBetween ">
-					<h3 id="hébergement"> Hébergement à Marseille </h3>
+		<section class="FlexAround" id="BlocHebergmentPopulaires">
+			<div class="FlexColumnAround SizeHébergement BackGrey BlocHebergment" id="hébergement">	
+				<h2> Hébergement à Marseille </h2>
+				<div class="Bloc1 FlexBetween" >
 					<div class="CubeHebergement FlexColumnCenter">
 						<div class="ImgHébergement1"></div>
 						<div class="CubeDetailHebergement">
 							<h3>Auberge de la Cannebière</h3>
 							<p>Nuit à partir de 25€</p>
-							<div class="FlexStar">
+							<div>
 								<i class="BS fas fa-star"></i>
 								<i class="BS fas fa-star"></i>
 								<i class="BS fas fa-star"></i>
@@ -126,54 +123,54 @@
 						</div>	
 					</div>
 				</div> 	
-				<div class="Bloc2 FlexBetween">	
-					<div class="CubeHebergement FlexColumnCenter">
-						<div class="ImgHébergement4"></div>
-						<div class="CubeDetailHebergement">
-							<h3>Hôtel de la mer</h3>
-							<p>Nuit à partir de 46€</p>
-							<div>
-								<i class="BS fas fa-star"></i>
-								<i class="BS fas fa-star"></i>
-								<i class="BS fas fa-star"></i>
-								<i class="fas fa-star"></i>
-								<i class="fas fa-star"></i>
-							</div>
-						</div>	
+					<div class="Bloc2 FlexBetween">	
+						<div class="CubeHebergement FlexColumnCenter">
+							<div class="ImgHébergement4"></div>
+							<div class="CubeDetailHebergement">
+								<h3>Hôtel de la mer</h3>
+								<p>Nuit à partir de 46€</p>
+								<div>
+									<i class="BS fas fa-star"></i>
+									<i class="BS fas fa-star"></i>
+									<i class="BS fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+							</div>	
+						</div>
+						<div class="CubeHebergement FlexColumnCenter">
+							<div class="ImgHébergement5"></div>
+							<div class="CubeDetailHebergement">
+								<h3>Auberge Le Panier</h3>
+								<p>Nuit à partir de 23€</p>
+								<div>
+									<i class="BS fas fa-star"></i>
+									<i class="BS fas fa-star"></i>
+									<i class="BS fas fa-star"></i>
+									<i class="BS fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</div>
+							</div>	
+						</div>
+						<div class="CubeHebergement FlexColumnCenter">
+							<div class="ImgHébergement6"></div>
+							<div class="CubeDetailHebergement">
+								<h3>Hôtel chez Amina</h3>
+								<p>Nuit à partir de 96€</p>
+								<div>
+									<i class="BS fas fa-star"></i>
+									<i class="BS fas fa-star"></i>
+									<i class="BS fas fa-star"></i>
+									<i class="BS fas fa-star"></i>
+									<i class="BS fas fa-star"></i>
+								</div>
+							</div>	
+						</div>
 					</div>
-					<div class="CubeHebergement FlexColumnCenter">
-						<div class="ImgHébergement5"></div>
-						<div class="CubeDetailHebergement">
-							<h3>Auberge Le Panier</h3>
-							<p>Nuit à partir de 23€</p>
-							<div>
-								<i class="BS fas fa-star"></i>
-								<i class="BS fas fa-star"></i>
-								<i class="BS fas fa-star"></i>
-								<i class="BS fas fa-star"></i>
-								<i class="fas fa-star"></i>
-							</div>
-						</div>	
-					</div>
-					<div class="CubeHebergement FlexColumnCenter">
-						<div class="ImgHébergement6"></div>
-						<div class="CubeDetailHebergement">
-							<h3>Hôtel chez Amina</h3>
-							<p>Nuit à partir de 96€</p>
-							<div>
-								<i class="BS fas fa-star"></i>
-								<i class="BS fas fa-star"></i>
-								<i class="BS fas fa-star"></i>
-								<i class="BS fas fa-star"></i>
-								<i class="BS fas fa-star"></i>
-							</div>
-						</div>	
-					</div>
-				</div>
-				<p class="TxtGras">Afficher plus</p>	
-			</div>	
+					<p class="TxtGras">Afficher plus</p>	
+				</div>	
 
-			<div class="SizePopulaire BackGrey BlocPopulaire"> 
+			<div class="SizePopulaire BackGrey BlocPopulaire" id="Blocpopulaires"> 
 				<div class="FlexBetween">
 					<h2 class="TxtGras">Les plus populaires</h2>
 					<div><i class="fas fa-chart-line fa-2x"></i></div>
@@ -225,7 +222,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="Activités">
+		<section class="Activités" id="Blocactivité">
 			<h2 id="activité">Activités à marseille</h2>
 			<div class="BlocActivités FlexBetween">
 				<div class="CubeActivités FlexColumnCenter">
@@ -264,31 +261,30 @@
 							<div class="Heighttitle ActivitésTitre"><h3>Parc Longchamp</h3></div>
 						</div>
 				</div>		
-			</div>	
-			
-							
-		</section>		
-	    	<footer>
-				<div class="Footer BackGrey FlexBetween">
-					<div class="MargeBlocFooter1 TailleBlocFooter">
-						<h3>A propos </h3>
-						<div class="DivLinkFooter"><a href="#" class="LinkFooter Décorationnone">Fonctionnement du site</a></div>
-						<div class="DivLinkFooter"><a href="#" class="LinkFooter Décorationnone">Conditions générales de vente</a></div>
-						<div class="DivLinkFooter"><a href="#" class="LinkFooter Décorationnone">Données et confidentialité</a></div>
-					</div>
-
-					<div class="TailleBlocFooter">
-						<h3>Nos hébergements</h3>
-						<div class="DivLinkFooter"><a href="#" class="LinkFooter Décorationnone">Charte qualité</a></div>
-						<div class="DivLinkFooter"><a href="#" class="LinkFooter Décorationnone">Soumettre votre hôtel</a></div>
-					</div>
-
-					<div class="MargeBlocFooter3 TailleBlocFooter">
-						<h3>Assistance</h3>
-						<div class="DivLinkFooter"><a href="#" class="LinkFooter Décorationnone">Centre d'aide</a></div>
-						<div class="DivLinkFooter"><a href="#" class="LinkFooter Décorationnone">Nous contacter</a></div>
-					</div>
+			</div>			
+		</section>	
+		
+		<footer>
+			<div class="Footer BackGrey FlexBetween"id="foot">
+				<div class="MargeBlocFooter1 TailleBlocFooter">
+					<h3>A propos </h3>
+					<div class="DivLinkFooter"><a href="#" class="LinkFooter Décorationnone">Fonctionnement du site</a></div>
+					<div class="DivLinkFooter"><a href="#" class="LinkFooter Décorationnone">Conditions générales de vente</a></div>
+					<div class="DivLinkFooter"><a href="#" class="LinkFooter Décorationnone">Données et confidentialité</a></div>
 				</div>
-			</footer>
+
+				<div class="TailleBlocFooter">
+					<h3>Nos hébergements</h3>
+					<div class="DivLinkFooter"><a href="#" class="LinkFooter Décorationnone">Charte qualité</a></div>
+					<div class="DivLinkFooter"><a href="#" class="LinkFooter Décorationnone">Soumettre votre hôtel</a></div>
+				</div>
+
+				<div class="MargeBlocFooter3 TailleBlocFooter">
+					<h3>Assistance</h3>
+					<div class="DivLinkFooter"><a href="#" class="LinkFooter Décorationnone">Centre d'aide</a></div>
+					<div class="DivLinkFooter"><a href="#" class="LinkFooter Décorationnone">Nous contacter</a></div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>

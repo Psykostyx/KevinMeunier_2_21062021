@@ -56,7 +56,7 @@
 /*Fin des balises général*/
 body
 {
-	font-family:'Open Sans', sans-serif;
+	font-family:'Raleway', sans-serif;
 	margin: 10px;
 }
 
@@ -555,8 +555,64 @@ margin-top: 100px;
 {
 	body
 	 {
-		 width: 70%;
+		 width: 768px;
+		
 	 }
+	 .Logo
+	 {
+		position: absolute;
+		top: 5px; left: 10px;
+	 }
+	 .intro
+	 {
+		 justify-content: center;
+	 }
+	#Introduction
+	{
+		width: 132%;
+		justify-content: center;
+		align-items: center;
+	}
+	#Icon
+	{
+		width: 160%;
+	}
+	#Navigations
+	{
+		flex-direction: row-reverse;
+		width: 70%;
+	}
+	#headnav
+	{
+		font-size: 20px;
+	}
+	#AncreHebergements
+	{
+		width: 0%;		
+		line-height: 10px;
+		margin-top: 20px;
+		text-align: center;
+	}
+	#AncreActivités
+	{
+		width: 100%;
+		line-height: 10px;
+		margin-top: 20px;
+		text-align: center;
+	}
+	}
+	#AncreInscription
+	{
+		position: absolute;
+		top: 10px; right: 0px;
+	}
+	.Navlink
+	{
+		position: relative;
+		top: 70px;
+		justify-content: space-between;
+
+	}
 	#BlocHebergmentPopulaires 
 	{
 		flex-direction: column;
@@ -564,22 +620,19 @@ margin-top: 100px;
 	.BlocHebergment {
 		margin: 20px 0;
 	}
-	#Navigations
-	{
-		flex-direction: row-reverse;
-		width: 30%;
-	}
+	
 	.ImgHébergement1.ImgHébergement2.ImgHébergement3.ImgHébergement4.ImgHébergement5.ImgHébergement6
 	{
 		width: 140%;
 		height: 120%;
 		font-size: 40px;
+		justify-content: space-around;
 	}
 	.CubeHebergement
 	{
-	width: 100%;
-	padding: 1%;
-	border-radius: 20px;
+		width: 100%;
+		padding: 1%;
+		border-radius: 20px;
 	}
 
 	#hébergement
@@ -589,7 +642,33 @@ margin-top: 100px;
 		margin: auto;
 	}
 
-
+	#Blocpopulaires
+	{
+		flex-direction: row;
+		width: 715px;
+		font-size: 13px;
+		margin: auto;
+	}
+	.ImgPopulaire1.ImgPopulaire2.ImgPopulaire3
+	{
+		width: 140%;
+		height: 120%;
+		font-size: 40px;
+		justify-content: space-around;
+	}
+	#Blocactivité
+	{
+		width: 138%;
+	}
+	#foot
+	{
+		width: 140%;
+		text-align: center;
+	}
+	.Footer
+	{
+	margin-top: 65px;
+	}
 }
 
 @media (max-width: 360px) {
