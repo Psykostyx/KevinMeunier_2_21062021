@@ -81,7 +81,7 @@ header
 	height: 99px;
 	
 }
-.Links13 
+.Links
 {
 	margin-right: 50px;
 	text-decoration: none;
@@ -109,14 +109,7 @@ header
 {
 font-weight: bold;
 }
-/* ./Link 
-{
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-position: absolute;right: 60px;top: 6px;
-line-height: 100px;
-}*/
+
 .Links 
 {
 	border-top: 1px solid transparent;
@@ -558,24 +551,26 @@ margin-top: 100px;
 		 width: 768px;
 		
 	 }
-	 .Logo
-	 {
-		position: absolute;
-		top: 5px; left: 10px;
-	 }
-	 .intro
-	 {
-		 justify-content: center;
-	 }
-	#Introduction
+	.Logo
 	{
-		width: 132%;
-		justify-content: center;
-		align-items: center;
+	   position: absolute;
+	   top: 10px; left: 15px;
 	}
-	#Icon
+	.intro
+	{
+		justify-content: center;
+		font-size: 23px;
+	}
+   #Introduction
+   {
+	   width: 135%;
+	   justify-content: center;
+	   align-items: center;
+   }
+   #Icon
 	{
 		width: 160%;
+		font-size: 25px;
 	}
 	#Navigations
 	{
@@ -584,7 +579,8 @@ margin-top: 100px;
 	}
 	#headnav
 	{
-		font-size: 20px;
+		font-size: 25px;
+		width: auto;
 	}
 	#AncreHebergements
 	{
@@ -595,16 +591,25 @@ margin-top: 100px;
 	}
 	#AncreActivités
 	{
+		color: #0065ff;
 		width: 100%;
 		line-height: 10px;
 		margin-top: 20px;
 		text-align: center;
 	}
+	.Activité
+	{
+		color: #0065ff;
+	}
+	.Links
+	{
+		border-bottom: 1px solid #0065ff;
 	}
 	#AncreInscription
 	{
 		position: absolute;
-		top: 10px; right: 0px;
+		top: 25px; right: -450px;
+		font-size: 30px;
 	}
 	.Navlink
 	{
@@ -616,61 +621,43 @@ margin-top: 100px;
 	#BlocHebergmentPopulaires 
 	{
 		flex-direction: column;
-	}	
-	.BlocHebergment {
-		margin: 20px 0;
 	}
 	
-	.ImgHébergement1.ImgHébergement2.ImgHébergement3.ImgHébergement4.ImgHébergement5.ImgHébergement6
-	{
-		width: 140%;
-		height: 120%;
-		font-size: 40px;
-		justify-content: space-around;
-	}
-	.CubeHebergement
-	{
-		width: 100%;
-		padding: 1%;
-		border-radius: 20px;
-	}
 
 	#hébergement
 	{
-		width: 715px;
-		font-size: 13px;
+		width: 1180px;
+		font-size: 21px;
 		margin: auto;
+		margin-bottom: 25px;
 	}
-
 	#Blocpopulaires
 	{
-		flex-direction: row;
-		width: 715px;
-		font-size: 13px;
+		
+		width: 1180px;
+		font-size: 25px;
+		margin-top: 5px;
 		margin: auto;
-	}
-	.ImgPopulaire1.ImgPopulaire2.ImgPopulaire3
-	{
-		width: 140%;
-		height: 120%;
-		font-size: 40px;
-		justify-content: space-around;
 	}
 	#Blocactivité
 	{
-		width: 138%;
+		width: 1210px;
+		font-size: 25px;
 	}
 	#foot
 	{
-		width: 140%;
+		width: 1210px;
 		text-align: center;
+		font-size: 25px;
 	}
 	.Footer
 	{
 	margin-top: 65px;
 	}
+	
 }
 
-@media (max-width: 360px) {
-
+@media (max-width: 360px)
+{
+	
 }
