@@ -546,115 +546,137 @@ margin-top: 100px;
 
 @media (max-width: 768px) 
 {
-	body
-	 {
-		 width: 768px;
-		
+	body 
+	{
+		overflow-x: hidden; 
+		overflow-y: hidden;
 	 }
 	.Logo
 	{
 	   position: absolute;
-	   top: 10px; left: 15px;
+	   top: 5px; left: 10px;
 	}
 	.intro
 	{
 		justify-content: center;
-		font-size: 23px;
+		width: 95%;
 	}
    #Introduction
    {
-	   width: 135%;
+	   width: 95%;
 	   justify-content: center;
 	   align-items: center;
    }
    #Icon
-	{
-		width: 160%;
-		font-size: 25px;
-	}
-	#Navigations
-	{
-		flex-direction: row-reverse;
-		width: 70%;
-	}
-	#headnav
-	{
-		font-size: 25px;
-		width: auto;
-	}
-	#AncreHebergements
-	{
-		width: 0%;		
-		line-height: 10px;
-		margin-top: 20px;
-		text-align: center;
-	}
-	#AncreActivités
-	{
-		color: #0065ff;
-		width: 100%;
-		line-height: 10px;
-		margin-top: 20px;
-		text-align: center;
-	}
-	.Activité
-	{
-		color: #0065ff;
-	}
-	.Links
-	{
-		border-bottom: 1px solid #0065ff;
-	}
-	#AncreInscription
-	{
-		position: absolute;
-		top: 25px; right: -450px;
-		font-size: 30px;
-	}
-	.Navlink
-	{
-		position: relative;
-		top: 70px;
-		justify-content: space-between;
+   {
+	   width: 95%;
+	   margin-left: 5px;
+   }
+   #Navigations
+   {
+	   flex-direction: row-reverse;
+	   width: 50%;
+   }
+   #headnav
+   {
+	   font-size: 20px;
+	   width: 95%;
+   }
+   #AncreHebergements
+   {
+	   width: 0%;		
+	   line-height: 10px;
+	   margin-top: 20px;
+	   text-align: center;
+   }
+   #AncreActivités
+   {
+	   width: 100%;
+	   line-height: 10px;
+	   margin-top: 20px;
+	   text-align: center;
+   }
+   }
+   #AncreInscription
+   {
+	   position: absolute;
+	   top: 10px; right: 0px;
+   }
+   .Navlink
+   {
+	   position: relative;
+	   top: 70px;
+	   justify-content: space-between;
 
-	}
-	#BlocHebergmentPopulaires 
-	{
-		flex-direction: column;
-	}
-	
+   }
+   #BlocHebergmentPopulaires 
+   {
+	   flex-direction: column-reverse;
+	   width: 95%;
+   }	
+   .BlocHebergment {
+	   margin: 10px 0;
+   }
+   
+   .ImgHébergement1.ImgHébergement2.ImgHébergement3.ImgHébergement4.ImgHébergement5.ImgHébergement6
+   {
+	   width: 95%;
+	   height: 120%;
+	   font-size: 40px;
+	   justify-content: space-around;
+   }
+   .CubeHebergement
+   {
+	   width: 95%;
+	   padding: 1%;
+	   border-radius: 20px;
+   }
 
-	#hébergement
-	{
-		width: 1180px;
-		font-size: 21px;
-		margin: auto;
-		margin-bottom: 25px;
-	}
-	#Blocpopulaires
-	{
-		
-		width: 1180px;
-		font-size: 25px;
-		margin-top: 5px;
-		margin: auto;
-	}
-	#Blocactivité
-	{
-		width: 1210px;
-		font-size: 25px;
-	}
-	#foot
-	{
-		width: 1210px;
-		text-align: center;
-		font-size: 25px;
-	}
-	.Footer
-	{
-	margin-top: 65px;
-	}
-	
+   #hébergement
+   {
+	   width: 90%;
+	   font-size: 13px;
+	   margin: auto;
+   }
+
+   #Blocpopulaires
+   {
+	   flex-direction: row;
+	   width: 90%;
+	   font-size: 13px;
+	   margin: auto;
+   }
+   .ImgPopulaire1.ImgPopulaire2.ImgPopulaire3
+   {
+	   width: 100%;
+	   height: 120%;
+	   font-size: 40px;
+	   justify-content: space-around;
+   }
+   #Blocactivité
+   {
+	   width: 95%;
+	   flex-direction: column;
+   }
+   .ImgActivités1.ImgActivités2.ImgActivités3.ImgActivités4.ImgActivités5.ImgActivités6
+   {
+	   flex-direction: column;
+	   width: 95%;
+	   height: 70%;
+	   font-size: 40px;
+	   justify-content: space-around;
+   }
+
+   #foot
+   {
+	   width: 100%;
+	   text-align: center;
+   }
+   .Footer
+   {
+	   	width: 100%;
+   		margin-top: 65px;
+   }
 }
 
 @media (max-width: 360px)
