@@ -546,11 +546,7 @@ margin-top: 100px;
 
 @media (max-width: 768px) 
 {
-	body 
-	{
-		overflow-x: hidden; 
-		overflow-y: hidden;
-	 }
+	
 	.Logo
 	{
 	   position: absolute;
@@ -596,7 +592,6 @@ margin-top: 100px;
 	   margin-top: 20px;
 	   text-align: center;
    }
-   }
    #AncreInscription
    {
 	   position: absolute;
@@ -631,20 +626,19 @@ margin-top: 100px;
 	   padding: 1%;
 	   border-radius: 20px;
    }
-
    #hébergement
    {
 	   width: 90%;
 	   font-size: 13px;
 	   margin: auto;
    }
-
    #Blocpopulaires
    {
 	   flex-direction: row;
 	   width: 90%;
 	   font-size: 13px;
 	   margin: auto;
+	   margin-bottom: 5px;
    }
    .ImgPopulaire1.ImgPopulaire2.ImgPopulaire3
    {
@@ -666,7 +660,6 @@ margin-top: 100px;
 	   font-size: 40px;
 	   justify-content: space-around;
    }
-
    #foot
    {
 	   width: 100%;
@@ -677,9 +670,78 @@ margin-top: 100px;
 	   	width: 100%;
    		margin-top: 65px;
    }
-}
-
 @media (max-width: 360px)
 {
+	#Navigations
+   {
+	   flex-direction: row;
+	   width: 100%;
+   }
+	#AncreInscription
+   {
+	   position: absolute;
+	   top: 23px; right: -46px;
+   }
+   #AncreHebergements
+   {  
+	   width: 100%;		
+	   line-height: 10px;
+	   margin-top: 20px;
+	   margin-left: 60px;
+	   text-align: center;
+   }
+   #AncreActivités
+   {
+	   width: 100%;
+	   line-height: 10px;
+	   margin-top: 20px;
+	   padding-left: 25px;
+	   text-align: center;
+   }
+   .intro > h4
+   {
+	text-align: center;
+	font-weight: bold;
+	font-size: 21px;
+   }
+   .intro > p
+	{
+		margin-top: -15px;
+		text-align: center;
+		font-size: 15px;
+	}
+	.Search 
+	{
+		height: 28px;
+    	width: 185px;
+    	font-size: 18px;
+    	color: black;
+    	font-weight: bold;
+    	margin-left: 5px;
+	}
+	.BoutonSearch 
+	{
+		width: 120px;
+		height: 50px;
+		color: white;
+		cursor: pointer;
+		border-radius: 0px 10px 10px 0px;
+	}
+	.IconSize
+	{
+		width: 50px;
+		height: 50px;
+		border-radius: 10px 0px 0px 10px;	
+	}
+	.Bordersearch {
+    
+		border-radius: 10px;
+		border: 0.5px #f2f2f2 solid;
+	}
+	#Icon {
+		margin-top: 10px;
+		width: 80%;
+		margin-left: 5px;
+	}
 	
 }
