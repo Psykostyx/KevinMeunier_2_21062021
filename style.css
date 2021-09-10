@@ -101,9 +101,7 @@ header
 {
 	color: black;
 	margin-right: 50px;
-	text-decoration: none;
-		
-	
+	text-decoration: none;	
 }
 .Signin
 {
@@ -114,7 +112,6 @@ font-weight: bold;
 {
 	border-top: 1px solid transparent;
 }
-
 
 /*Section Barre de recherche*/
 .Bordersearch
@@ -670,6 +667,7 @@ margin-top: 100px;
 	   	width: 100%;
    		margin-top: 65px;
    }
+}   
 @media (max-width: 360px)
 {
 	#Navigations
@@ -698,6 +696,15 @@ margin-top: 100px;
 	   padding-left: 25px;
 	   text-align: center;
    }
+   .Links 
+	{
+	border-top: 1px solid transparent;
+	}
+   .Links:hover
+	{
+	border-top: 1px solid #0065FC;
+	cursor:pointer
+	}
    .intro > h4
    {
 	text-align: center;
@@ -721,7 +728,7 @@ margin-top: 100px;
 	}
 	.BoutonSearch 
 	{
-		width: 120px;
+		width: 100px;
 		height: 50px;
 		color: white;
 		cursor: pointer;
@@ -733,15 +740,84 @@ margin-top: 100px;
 		height: 50px;
 		border-radius: 10px 0px 0px 10px;	
 	}
-	.Bordersearch {
-    
+	.Bordersearch 
+	{
 		border-radius: 10px;
 		border: 0.5px #f2f2f2 solid;
 	}
-	#Icon {
+	#Icon 
+	{
 		margin-top: 10px;
 		width: 80%;
 		margin-left: 5px;
+		margin-bottom: 5px;
 	}
-	
+	.Info {
+		display: flex;
+		align-items: center;
+		padding-right: 0px;
+		margin-bottom: 10px;
+	}
+	/*Les plus populaire*/
+	.CubePopulaire
+	{
+	background-color: white;
+	height: auto;
+	padding: 1% 0% 1% 1%;
+	border-radius: 20px;
+	}
+	#Blocpopulaires 
+	{
+		flex-direction: row;
+		width: 100%;
+		font-size: 16px;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	.BlocPopulaire
+	{
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	border-radius: 0px;
+	}	
+	/*Bloc Hébergement*/
+	h2
+	{
+	width: 100%;
+	margin: 20px 0 20px 10px;
+	} 
+	#hébergement 
+	{
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 100%;
+		font-size: 16px;
+		margin: auto;
+	}
+	.SizeHébergement
+	{
+	margin-right: 20px;
+	border-radius: 10px;
+	}
+	.BlocHebergment
+	{
+	padding-left: 20px;
+	padding-right: 20px;	
+	background-color: transparent;
+	}
+
+	.CubeHebergement
+	{
+	width: 30%;
+	height: auto;
+	background-color: white;
+	padding: 1%;
+	border-radius: 20px;
+	}
+	.Bloc1,.Bloc2
+	{
+		flex-direction: column;
+	}
+
 }
