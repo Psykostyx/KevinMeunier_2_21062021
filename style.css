@@ -790,7 +790,6 @@ margin-top: 100px;
 	#hébergement 
 	{
 		flex-direction: column;
-		flex-wrap: wrap;
 		width: 100%;
 		font-size: 16px;
 		margin: auto;
@@ -819,5 +818,8 @@ margin-top: 100px;
 	{
 		flex-direction: column;
 	}
-
+	#AncreInscription
+	{
+		height: 30px;
+	}
 }
