@@ -58,6 +58,7 @@ body
 {
 	font-family:'Raleway', sans-serif;
 	margin: 0;
+	
 }
 
 /*Header*/
@@ -228,6 +229,7 @@ background-color: #0065FC;
 	display: flex;
 	align-items: center;
 	padding-right: 0px;
+	width: 80%;
 }
 .fa-info
 {
@@ -553,6 +555,7 @@ margin-top: 100px;
 
 @media (max-width: 768px) 
 {	
+	
 	.Logo > img
 	{
 		width: 120px;
@@ -583,6 +586,7 @@ margin-top: 100px;
 	   flex-direction: row-reverse;
 	   width: 50%;
    }
+   
    #headnav
    {
 	   font-size: 20px;
@@ -595,6 +599,7 @@ margin-top: 100px;
 	   margin-top: 20px;
 	   text-align: center;
    }
+
    #AncreActivités
    {
 	   width: 100%;
@@ -608,6 +613,13 @@ margin-top: 100px;
 	   position: absolute;
 	   top: 40px; right: 45px;
    }
+   .Info {
+	display: flex;
+	align-items: center;
+	padding-right: 0px;
+	margin-bottom: 10px;
+	width: 85%;
+}
    .Navlink
    {
 	   position: relative;
@@ -617,11 +629,11 @@ margin-top: 100px;
    #BlocHebergmentPopulaires 
    {
 	   flex-direction: column-reverse;
-	   width: 90%;
+	   width: 85%;
    }	
    .BlocHebergment 
    {
-	   margin: 10px 0;
+	   margin: 5px 0;
    }
    .CubeHebergement
    {
@@ -629,9 +641,14 @@ margin-top: 100px;
 	   padding: 1%;
 	   border-radius: 20px;
    }
+   .CubeHebergement:hover
+   {
+	   cursor: none;
+	   transform: none;
+   }
    #hébergement
    {
-	   width: 100%;
+	   width: 90%;
 	   font-size: 13px;
 	   margin: auto;
 	   margin-left: 10px;
@@ -639,12 +656,17 @@ margin-top: 100px;
    #Blocpopulaires
    {
 	   flex-direction: row;
-	   width: 100%;
+	   width: 93%;
 	   font-size: 13px;
 	   margin: auto;
 	   margin-bottom: 5px;
-	   margin-left: 10px;
+	   margin-left: 0px;
    }
+   .CubePopulaire:hover
+{
+	cursor: none;
+	transform: none;
+}
    .BlocPopulaire
 	{
 	padding-left: 20px;
@@ -654,10 +676,20 @@ margin-top: 100px;
    #Blocactivité
    {
 	   margin-top: 10px;
-	   margin-left: 10px;
-	   width: 95%;
+	   margin-left: 0px;
+	   width: 88%;
 	   flex-direction: column;
    }
+   .CubeActivités:hover
+{
+	cursor: none;
+	transform: none;
+}
+.CubeActivités2356:hover
+{
+	cursor: none;
+	transform: none;
+}
    .ImgActivités1.ImgActivités2.ImgActivités3.ImgActivités4.ImgActivités5.ImgActivités6
    {
 	   flex-direction: column;
@@ -682,32 +714,40 @@ margin-top: 100px;
 /*Partie Mobile*/
 @media (max-width: 360px)
 {
+	
 	#Navigations
    {
 	   flex-direction: row;
-	   width: 100%;
+	   width: 98%;
    }
 	#AncreInscription
    {
 	   position: absolute;
-	   top: 23px; right: -40px;
+	   top: 23px; right: 4px;
 	   height: 30px;
    }
    #AncreHebergements
    {  
-	   width: 100%;		
+	   width: 100%;	
+	   	
 	   line-height: 10px;
 	   margin-top: 20px;
-	   margin-left: 60px;
+	   margin-left: 20px;
 	   text-align: center;
    }
    #AncreActivités
    {
-	   width: 100%;
+	   width: 50%;
+	  
 	   line-height: 10px;
 	   margin-top: 20px;
-	   padding-left: 25px;
+	   margin-right: 0px;
+	   padding-left: 0px;
 	   text-align: center;
+   }
+   .Navlink
+   {
+	   height: 70px;
    }
    .Links 
 	{
@@ -774,8 +814,14 @@ margin-top: 100px;
 		align-items: center;
 		padding-right: 0px;
 		margin-bottom: 10px;
+		width: 85%;
 	}
 	/*Les plus populaire*/
+	#BlocHebergmentPopulaires 
+	{
+    flex-direction: column-reverse;
+    width:90%;
+	}
 	.CubePopulaire
 	{
 	background-color: white;
@@ -786,11 +832,10 @@ margin-top: 100px;
 	#Blocpopulaires 
 	{
 		flex-direction: row;
-		width: 95%;
-		font-size: 16px;
-		margin: auto;
-		margin-bottom: 20px;
-		margin-left: 5px;
+		width: 75;
+		font-size: 12px;
+		margin-bottom: 0px;
+		margin-left: 0px;
 	}
 	.BlocPopulaire
 	{
@@ -810,7 +855,8 @@ margin-top: 100px;
 		flex-direction: column;
 		width: 100%;
 		font-size: 16px;
-		margin: auto;
+		margin-left: 0px;
+	
 	}
 	.SizeHébergement
 	{
@@ -819,7 +865,7 @@ margin-top: 100px;
 	}
 	.BlocHebergment
 	{
-	padding-left: 20px;
+	padding-left: 12px;
 	padding-right: 20px;	
 	background-color: transparent;
 	}
@@ -828,7 +874,7 @@ margin-top: 100px;
 	width: 100%;
 	height: auto;
 	background-color: white;
-	margin-left: 10px;
+	margin-left: 0px;
 	padding: 3%;
 	margin-bottom: 10px;
 	border-radius: 20px;
@@ -847,10 +893,11 @@ margin-top: 100px;
 	/*Partie Activité*/
 	#Blocactivité
    {
+	   overflow: visible;
 	   display: flex;
 	   flex-direction: column;
 	   margin-top: 10px;
-	   margin-left: 10px;
+	   margin-left: 0px;
 	   width: 95%;
 	   
    }
