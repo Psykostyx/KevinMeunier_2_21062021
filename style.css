@@ -5,6 +5,12 @@
 	justify-content: space-around;
 	align-items:center;
 }
+.Flexalign
+{
+	display: flex;
+	align-items: center;
+}
+
 .FlexCenter
 {
 	display: flex;
@@ -35,7 +41,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-
 }
 .Décorationnone
 {
@@ -57,8 +62,7 @@
 body
 {
 	font-family:'Raleway', sans-serif;
-	margin: 0;
-	
+	margin: 0;	
 }
 
 /*Header*/
@@ -70,12 +74,13 @@ header
 #Navigation
 {
 	width: 100%;
+	margin-left: 5px;
 }
 .Logo
-	{
-	   background-image: url("./images/logo/Reservia@3x.png");
-	   background: no-repeat;
-	}
+{
+	background-image: url("./images/logo/Reservia@3x.png");
+	background: no-repeat;
+}
 .Logo > img
 {
 	width: 120px;
@@ -89,8 +94,7 @@ header
 .Sizelinks
 {
 	width: 140px;
-	height: 99px;
-	
+	height: 99px;	
 }
 .Links
 {
@@ -116,7 +120,7 @@ header
 }
 .Signin
 {
-font-weight: bold;
+	font-weight: bold;
 }
 
 .Links 
@@ -190,12 +194,12 @@ font-weight: bold;
 }
 .FiltreTextIcon:hover > .FiltreText
 {
-color:#0065FC
+	color:#0065FC
 }
 .FiltreTextIcon:hover > .FiltreIcon
 {
-color: white;
-background-color: #0065FC;
+	color: white;
+	background-color: #0065FC;
 }
 .FiltreText
 {
@@ -219,7 +223,6 @@ background-color: #0065FC;
 	flex-wrap: wrap;
 	align-items: center;
 	align-content: center;
-	
 }
 /*Fin de la section Filtre*/
 
@@ -248,7 +251,6 @@ background-color: #0065FC;
 
 h2
 {
-	width: 100%;
 	margin: 20px 0 20px 10px;
 } 
 .SizeHébergement
@@ -262,7 +264,7 @@ h2
 {
 	padding-left: 20px;
 	padding-right: 20px;
-	
+	margin-left: 5px;	
 }
 .Bloc1
 {
@@ -356,6 +358,7 @@ h2
 {
 	padding-left: 20px;
 	padding-right: 20px;
+	margin-right: 5px;
 }
 .BlocPopulaire12 /*12 parce que seul le Bloc 1 et 2 sont concerné*/
 {
@@ -409,8 +412,10 @@ h2
 
 .Activités
 {
-margin-top: 50px;
-margin-bottom: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 .BlocActivités
 {
@@ -584,7 +589,7 @@ margin-top: 100px;
    #Navigations
    {
 	   flex-direction: row-reverse;
-	   width: 50%;
+	   width: 20%;
    }
    
    #headnav
@@ -605,7 +610,7 @@ margin-top: 100px;
 	   width: 100%;
 	   line-height: 10px;
 	   margin-top: 20px;
-	   margin-right: 50px;
+	   margin-right: 100px;
 	   text-align: center;
    }
    #AncreInscription
@@ -613,13 +618,14 @@ margin-top: 100px;
 	   position: absolute;
 	   top: 40px; right: 45px;
    }
-   .Info {
+   .Info 
+   {
 	display: flex;
 	align-items: center;
 	padding-right: 0px;
 	margin-bottom: 10px;
-	width: 85%;
-}
+	margin-left: 5px;
+	}
    .Navlink
    {
 	   position: relative;
@@ -648,25 +654,25 @@ margin-top: 100px;
    }
    #hébergement
    {
-	   width: 90%;
-	   font-size: 13px;
+	   width: 100%;
+	   font-size: 12px;
 	   margin: auto;
-	   margin-left: 10px;
+	   margin-left: 25px;
    }
    #Blocpopulaires
    {
 	   flex-direction: row;
-	   width: 93%;
+	   width: 100%;
 	   font-size: 13px;
 	   margin: auto;
 	   margin-bottom: 5px;
-	   margin-left: 0px;
+	   margin-left: 25px;
    }
    .CubePopulaire:hover
-{
-	cursor: none;
-	transform: none;
-}
+	{
+		cursor: none;
+		transform: none;
+	}
    .BlocPopulaire
 	{
 	padding-left: 20px;
@@ -676,20 +682,20 @@ margin-top: 100px;
    #Blocactivité
    {
 	   margin-top: 10px;
-	   margin-left: 0px;
-	   width: 88%;
+	   margin-left: 10px;
+	   width: 95%;
 	   flex-direction: column;
    }
    .CubeActivités:hover
-{
-	cursor: none;
-	transform: none;
-}
-.CubeActivités2356:hover
-{
-	cursor: none;
-	transform: none;
-}
+	{
+		cursor: none;
+		transform: none;
+	}
+	.CubeActivités2356:hover
+	{
+		cursor: none;
+		transform: none;
+	}
    .ImgActivités1.ImgActivités2.ImgActivités3.ImgActivités4.ImgActivités5.ImgActivités6
    {
 	   flex-direction: column;
@@ -723,16 +729,15 @@ margin-top: 100px;
 	#AncreInscription
    {
 	   position: absolute;
-	   top: 23px; right: 4px;
+	   top: 23px; right: -95px;
 	   height: 30px;
    }
    #AncreHebergements
    {  
-	   width: 100%;	
-	   	
+	   width: 100%;		   	
 	   line-height: 10px;
 	   margin-top: 20px;
-	   margin-left: 20px;
+	   margin-left: -45px;
 	   text-align: center;
    }
    #AncreActivités
@@ -770,10 +775,7 @@ margin-top: 100px;
 		text-align: center;
 		font-size: 15px;
 	}
-	#Introduction
-	{
-		width: 100%;
-	}
+	
 	.Search 
 	{
 		height: 28px;
@@ -814,7 +816,7 @@ margin-top: 100px;
 		align-items: center;
 		padding-right: 0px;
 		margin-bottom: 10px;
-		width: 85%;
+		width: 100%;
 	}
 	/*Les plus populaire*/
 	#BlocHebergmentPopulaires 
@@ -832,10 +834,10 @@ margin-top: 100px;
 	#Blocpopulaires 
 	{
 		flex-direction: row;
-		width: 75;
+		width: 100%;
 		font-size: 12px;
 		margin-bottom: 0px;
-		margin-left: 0px;
+		margin-left: 30px;
 	}
 	.BlocPopulaire
 	{
@@ -855,7 +857,7 @@ margin-top: 100px;
 		flex-direction: column;
 		width: 100%;
 		font-size: 16px;
-		margin-left: 0px;
+		margin-left: 50px;
 	
 	}
 	.SizeHébergement
@@ -897,8 +899,8 @@ margin-top: 100px;
 	   display: flex;
 	   flex-direction: column;
 	   margin-top: 10px;
-	   margin-left: 0px;
-	   width: 95%;
+	   margin-left: 50px;
+	   width: 100%;
 	   
    }
    .Activités 
@@ -915,20 +917,19 @@ margin-top: 100px;
    {
 	width: 340px;
 	height: 205px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
    }
    .BlocActivités2356
-   {
-	  
+   {  
 	flex-direction: column;
 	width: 100%;
-
    }
    .CubeActivités2356 
    {
 	width: 340px;
 	height: 205px;
-	margin-bottom: 5px;
+	margin-bottom: 15px;
+	margin-left: 10px;
    }
    .ImgActivités1.ImgActivités3
    {
@@ -936,11 +937,8 @@ margin-top: 100px;
 	}
    .Footer
    {
-	   margin-top: 655px;
-	   width: 100%;
-	   text-align: center;
-	   flex-direction: column;
-	   height: auto;	   
+	   margin-top: 720px;
+	   width: 126%;   
    }
   .MargeBlocFooter3
   {
