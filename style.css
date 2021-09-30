@@ -73,8 +73,8 @@ header
 /*Lien de Navigation*/ 
 #Navigation
 {
+	display: block;
 	width: 100%;
-	margin-left: 5px;
 }
 .Logo
 {
@@ -289,7 +289,7 @@ h2
 }
 .CubeDetailHebergement
 {
-	width: 90%;
+	width: 100%;
 }
 .ImgHébergement1
 {
@@ -558,17 +558,17 @@ margin-top: 100px;
 
 /* Partie responsive Tablette*/
 
-@media (max-width: 768px) 
+@media (max-width: 992px) 
 {	
 	
-	.Logo > img
+	/*.Logo > img
 	{
 		width: 120px;
 		height: 50px;
 		margin-top: -60px;
 		margin-left: 10px;
 		background: no-repeat;
-	}	
+	}	*/
 	.intro
 	{
 		justify-content: center;
@@ -588,30 +588,32 @@ margin-top: 100px;
    }
    #Navigations
    {
-	   flex-direction: row-reverse;
-	   width: 20%;
+	   flex-direction: row;
+	   width: 100%;
    }
    
-   #headnav
+  #headnav
    {
 	   font-size: 20px;
-	   width: 50%;
+	   align-items: flex-start;
+   }
+   .Rechercher
+   {
+	   display: 
+   }
+   .fa-light 
+   {
+	
+	   color: white;
    }
    #AncreHebergements
    {
-	   width: 0%;		
-	   line-height: 10px;
-	   margin-top: 20px;
-	   text-align: center;
+	
    }
 
    #AncreActivités
    {
-	   width: 100%;
-	   line-height: 10px;
-	   margin-top: 20px;
-	   margin-right: 100px;
-	   text-align: center;
+	  
    }
    #AncreInscription
    {
@@ -637,6 +639,24 @@ margin-top: 100px;
 	   flex-direction: column-reverse;
 	   width: 85%;
    }	
+   
+   .CubeHebergement:hover
+   {
+	   cursor: none;
+	   transform: none;
+   }
+   #hébergement
+   {
+	   width: 100%;
+	   font-size: 18px;
+	   margin: auto;
+	   margin-left: 25px;
+	   padding: 15px 30px;
+   }
+   .ImgHébergement1,.ImgHébergement2,.ImgHébergement3,.ImgHébergement4,.ImgHébergement5,.ImgHébergement6
+   {
+	   height: 250px;
+   }
    .BlocHebergment 
    {
 	   margin: 5px 0;
@@ -646,18 +666,18 @@ margin-top: 100px;
 	   width: 100%;
 	   padding: 1%;
 	   border-radius: 20px;
+	   margin-bottom: 15px;
    }
-   .CubeHebergement:hover
+   .CubeDetailHebergement
    {
-	   cursor: none;
-	   transform: none;
+	   font-size: 15px;
+	   margin-left: 5px;
    }
-   #hébergement
+   .Bloc1,.Bloc2
    {
-	   width: 100%;
-	   font-size: 12px;
-	   margin: auto;
-	   margin-left: 25px;
+	    margin-bottom: 5px;
+	    flex-direction: column;
+		margin-bottom: 3px;
    }
    #Blocpopulaires
    {
@@ -718,7 +738,7 @@ margin-top: 100px;
   }
 }   
 /*Partie Mobile*/
-@media (max-width: 360px)
+@media (max-width: 576px)
 {
 	
 	#Navigations
@@ -729,7 +749,7 @@ margin-top: 100px;
 	#AncreInscription
    {
 	   position: absolute;
-	   top: 23px; right: -95px;
+		right: -40px;
 	   height: 30px;
    }
    #AncreHebergements
@@ -938,7 +958,7 @@ margin-top: 100px;
    .Footer
    {
 	   margin-top: 720px;
-	   width: 126%;   
+	   width: 100%;   
    }
   .MargeBlocFooter3
   {
