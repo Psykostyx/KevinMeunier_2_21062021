@@ -58,6 +58,10 @@
 {
 	background-color: blue;
 }
+i.fas.fa-search
+{
+	display: none;
+}
 /*Fin des balises général*/
 body
 {
@@ -561,19 +565,16 @@ margin-top: 100px;
 @media (max-width: 992px) 
 {	
 	
-	/*.Logo > img
+	.Logo 
 	{
-		width: 120px;
-		height: 50px;
-		margin-top: -60px;
-		margin-left: 10px;
-		background: no-repeat;
-	}	*/
+		padding: 15px;	
+	}	
 	.intro
 	{
 		justify-content: center;
 		width: 95%;
 		margin-left: 10px;
+		margin-top: 30px;
 	}
    #Introduction
    {
@@ -593,27 +594,37 @@ margin-top: 100px;
    }
    
   #headnav
-   {
+   {   
 	   font-size: 20px;
-	   align-items: flex-start;
+	   align-items:flex-start;
+	   flex-direction: column;
+   }
+   .Sizelinks
+   {
+	   width: none;
+	   height: 50px;
    }
    .Rechercher
    {
-	   display: 
+	   display:none
    }
-   .fa-light 
+   i.fas.fa-search 
    {
-	
-	   color: white;
+	display: inline-flex;
    }
-   #AncreHebergements
+   .Links:hover
+   	{
+	border: transparent
+	} 
+   #AncreHebergements:hover
    {
-	
-   }
-
-   #AncreActivités
+		width: 50%;
+		border-bottom:#0065FC 2px solid ;
+   } 
+   #AncreActivités:hover 
    {
-	  
+		width: 50%;
+		border-bottom:#0065FC 2px solid ;
    }
    #AncreInscription
    {
@@ -630,10 +641,13 @@ margin-top: 100px;
 	}
    .Navlink
    {
-	   position: relative;
 	   top: 70px;
 	   justify-content: space-between;
+	   width: 50%;
+	   text-align: center;
+	   border-bottom:  solid 1px lightgray;
    }
+   /*partie Hébergement*/
    #BlocHebergmentPopulaires 
    {
 	   flex-direction: column-reverse;
@@ -679,13 +693,12 @@ margin-top: 100px;
 	    flex-direction: column;
 		margin-bottom: 3px;
    }
+   /*Partie populaire*/
    #Blocpopulaires
    {
-	   flex-direction: row;
 	   width: 100%;
-	   font-size: 13px;
 	   margin: auto;
-	   margin-bottom: 5px;
+	   margin-bottom: 10px;
 	   margin-left: 25px;
    }
    .CubePopulaire:hover
@@ -695,47 +708,93 @@ margin-top: 100px;
 	}
    .BlocPopulaire
 	{
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 35px;
 	}	
-   #Blocactivité
-   {
-	   margin-top: 10px;
-	   margin-left: 10px;
-	   width: 95%;
-	   flex-direction: column;
-   }
-   .CubeActivités:hover
+  	/*Partie Activité*/
+	.BlocActivités
 	{
-		cursor: none;
-		transform: none;
+	 flex-direction: column;
+	 align-items: center;
+	 margin-left: 0px;
 	}
-	.CubeActivités2356:hover
+	.Activités
+   {
+	margin-left: 0px;
+   }
+   .CubeActivités 
+   {
+	width: 850px;
+	height: 300px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+   }
+   .BlocActivités2356
+   {  
+	width: 92%;
+	margin-bottom: 20px;
+   }
+   .CubeActivités2356 
+   {
+	width: 850px;
+	height: 300px;
+	margin-bottom: 10px;
+	margin-left: 33px;
+   }
+	.ImgActivités1.ImgActivités3
 	{
-		cursor: none;
-		transform: none;
+		height: 250px;
 	}
-   .ImgActivités1.ImgActivités2.ImgActivités3.ImgActivités4.ImgActivités5.ImgActivités6
-   {
-	   flex-direction: column;
-	   width: 85%;
-	   height: 70%;
-	   font-size: 40px;
-	   justify-content: space-around;
-   }
-   .Footer
-   {
-	   width: 100%;
-	   text-align: center;
-	   flex-direction: column;
-	   height: auto;
-	   
-   }
-  .MargeBlocFooter3
-  {
-	  margin-right: 0px;
-  }
+	.ImgActivités3
+	{
+		height: 250px;
+		margin-bottom: 15px;
+	}
+	/*Partie Foot*/
+	.Footer
+	{
+		margin-top: 1265px; 
+		height: auto; 
+		line-height: 25px; 
+		flex-direction:column;
+	}
+	#Footpros
+	{
+		align-content: center;
+		width: %;
+
+	}
+	.TailleBlocFooter
+	{
+	height: 150px;
+	}
+	.MargeBlocFooter1
+	{
+	margin-left: 2%;
+	text-align: center;
+	line-height: 16px;
+	}
+	.MargeBlocFooter2
+	{
+		text-align: center;
+	}
+	.MargeBlocFooter3
+	{
+	margin-right: 5%;
+	text-align: center;
+	}
+	.LinkFooter
+	{
+	color: black;
+	}
+	.DivLinkFooter
+	{
+		height: 30px;
+	}
+
+	
+   
 }   
 /*Partie Mobile*/
 @media (max-width: 576px)
@@ -915,13 +974,11 @@ margin-top: 100px;
 	/*Partie Activité*/
 	#Blocactivité
    {
-	   overflow: visible;
 	   display: flex;
 	   flex-direction: column;
 	   margin-top: 10px;
 	   margin-left: 50px;
-	   width: 100%;
-	   
+	   width: 100%;	   
    }
    .Activités 
 	{
@@ -955,13 +1012,13 @@ margin-top: 100px;
    {
    margin: 0;
 	}
-   .Footer
+	.Footer
+	{
+		margin-top: 720px;
+		width: 100%;   
+	}
+   .MargeBlocFooter3
    {
-	   margin-top: 720px;
-	   width: 100%;   
+	   margin-right: 0px;
    }
-  .MargeBlocFooter3
-  {
-	  margin-right: 0px;
-  }
 }
